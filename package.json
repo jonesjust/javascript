@@ -5,12 +5,14 @@
   "main": "arrayTricks.js",
   "type": "module",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "typescript": "^4.9.4",
     "vitest": "^0.25.8"
   }
 }

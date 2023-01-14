@@ -1,8 +1,8 @@
-let hours = 0;
-let minutes = 0;
-const arrayOfTimes = [[1, 10], [2, 40], [3, 20], [0, 60], [0, 120], [0, 120], [1, 726]];
+let hours: number = 0;
+let minutes: number = 0;
+const arrayOfTimes: Array<number[]> = [[1, 0], [2, 40], [3, 20], [0, 60], [0, 120], [0, 120], [1, 726]];
 
-function addTime(addHours, addMinutes) {
+function addTime(addHours: number, addMinutes: number): void {
     minutes += addMinutes;
     hours += addHours;
     if (minutes === 60) {
@@ -15,7 +15,7 @@ function addTime(addHours, addMinutes) {
     }
 }
 
-function totalTime() {
+function totalTime(): string {
     for (let i = 0; i < arrayOfTimes.length; i++) {
         addTime(arrayOfTimes[i][0], arrayOfTimes[i][1]);
     }
